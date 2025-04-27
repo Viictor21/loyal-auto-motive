@@ -12,28 +12,34 @@ body {
 
 header {
   display: flex;
-  justify-content: flex-start; /* Align items from the start of the header */
+  justify-content: center; /* Centers both the logo and tagline together */
   align-items: center;
-  padding: 10px 20px; /* Reduced padding to minimize space */
+  padding: 10px 20px; /* Reduced padding for header */
   background-color: #333;
   color: white;
 }
 
 .logo img {
-  width: 225px;  /* Increase the logo size by 1.5x */
+  width: 225px; /* Increased logo size by 1.5x */
   height: auto;
-  margin-right: 15px; /* Reduce space between logo and tagline */
+  margin-right: 10px; /* Space between logo and tagline */
 }
 
 .header-text {
-  font-size: 1.5rem;
-  text-align: left; /* Align tagline text to the left */
+  display: flex;
+  flex-direction: column; /* Keeps the name and tagline stacked */
+  text-align: left; /* Ensures the text is aligned left */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
 .tagline {
   font-style: italic;
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: 5px; /* Reduced margin to make tagline closer */
 }
 
 nav {
@@ -76,7 +82,7 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.service-item img {
+service-item img {
   width: 100%;
   height: 100px;
   object-fit: cover;
