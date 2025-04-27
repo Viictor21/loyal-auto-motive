@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +14,11 @@ header {
   position: relative;
   text-align: center;
   color: white;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
 }
 
 .banner {
@@ -109,17 +113,5 @@ footer {
   .services-grid {
     flex-direction: column;
     align-items: center;
-  }
-}
-/* Logo Styling */
-.logo img {
-  width: 150px;  /* Set logo size */
-  height: auto;
-}
-
-/* Make the logo responsive */
-@media (max-width: 600px) {
-  .logo img {
-    width: 100px;  /* Logo size on smaller screens */
   }
 }
