@@ -14,28 +14,25 @@ header {
   position: relative;
   text-align: center;
   color: white;
+  padding-top: 50px; /* Add space at the top */
 }
 
 .logo img {
   width: 150px;
   height: auto;
-}
-
-.banner {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Centers the logo */
 }
 
 .header-text {
   position: absolute;
-  top: 30%;
+  top: 50%; /* Adjusted to vertically center the text */
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -50%); /* This centers the text both horizontally and vertically */
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
+  width: 80%; /* Added a width limit */
 }
 
 .tagline {
@@ -106,8 +103,8 @@ footer {
     margin: 10px 0;
   }
   .header-text {
-    top: 20%;
-    transform: translate(-50%, -20%);
+    top: 30%;
+    transform: translate(-50%, -30%);
     padding: 15px;
   }
   .services-grid {
